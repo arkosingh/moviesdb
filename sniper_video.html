@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>OneMovies</title>
+
+    <!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    
+	<!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style>
+	.bg-lightgray
+{
+    background-color:LightGray;
+}
+body {
+    background-color: transparent;
+    background: url("https://i.imgur.com/Tb5NGUl.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.highlight {
+    font-size: 18px;
+    font-family: 'Pontano Sans', cursive;
+    color: #ffffFF;
+    background-color: #000000;
+}
+	</style>
+</head>
+<body>
+<nav class="[ navbar navbar-fixed-top ][ navbar-bootsnipp animate ]" role="navigation">
+    	<div class="[ container ]">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="[ navbar-header ]">
+				<button type="button" class="[ navbar-toggle ]" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="[ sr-only ]">Toggle navigation</span>
+					<span class="[ icon-bar ]"></span>
+					<span class="[ icon-bar ]"></span>
+					<span class="[ icon-bar ]"></span>
+				</button>
+				<div class="[ animbrand ]">
+					<a class="[ navbar-brand ][ animate ]" href="index.html">OneMovies</a>
+				</div>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="[ collapse navbar-collapse ]" id="bs-example-navbar-collapse-1">
+				<ul class="[ nav navbar-nav navbar-right ]">
+					<li class="[ visible-xs ]">
+						<form action="http://bootsnipp.com/search" method="GET" role="search">
+							<div class="[ input-group ]">
+								<input type="text" class="[ form-control ]" name="q" placeholder="Search for snippets">
+								<span class="[ input-group-btn ]">
+									<button class="[ btn btn-primary ]" type="submit"><span class="[ glyphicon glyphicon-search ]"></span></button>
+									<button class="[ btn btn-danger ]" type="reset"><span class="[ glyphicon glyphicon-remove ]"></span></button>
+								</span>
+							</div>
+						</form>
+					</li>
+					<li><a href="#" class="[ animate ]">About</a></li>
+					<li>
+						<a href="#" class="[ dropdown-toggle ][ animate ]" data-toggle="dropdown"> Movies <span class="[ caret ]"></span></a>
+						<ul class="[ dropdown-menu ]" role="menu">
+							<li><a href="#" class="[ animate ]">Justice League<span class="[ pull-right glyphicon 	glyphicon glyphicon-film ]"></span></a></li>
+							<li><a href="#" class="[ animate ]">Life <span class="[ pull-right glyphicon 	glyphicon glyphicon-film ]"></span></a></li>
+							<li><a href="#" class="[ animate ]">Smurfs and The lost village <span class="[ pull-right glyphicon 	glyphicon glyphicon-film ]"></span></a></li>
+							
+							<li><a href="#" class="[ animate ]">American Sniper<span class="[ pull-right glyphicon 	glyphicon glyphicon-film ]"></span></a></li>
+							
+							<li class="disabled"><a href="#" class="[ animate ]">Coming Soon <span class="[ pull-right glyphicon glyphicon-film ]"></span></a></li>
+							
+						</ul>
+					</li>
+					<li class="[ dropdown ]">
+						<a href="#" class="[ dropdown-toggle ][ animate ]" data-toggle="dropdown">Tv Series <span class="[ caret ]"></span></a>
+						<ul class="[ dropdown-menu ]" role="menu">
+							<li><a href="#" class="[ animate ]">Game of Thrones <span class="[ pull-right glyphicon glyphicon-play-circle ]"></span></a></li>
+							<li><a href="#" class="[ animate ]">Vikings <span class="[ pull-right glyphicon glyphicon-play-circle ]"></span></a></li>
+							<li><a href="#" class="[ animate ]">Suits <span class="[ pull-right glyphicon glyphicon-play-circle ]"></span></a></li>
+							<li class= "disabled"><a href="#" class="[ animate ]">Coming Soon <span class="[ pull-right glyphicon glyphicon-play-circle ]"></span></a></li>
+							
+						</ul>
+					</li>
+					<li class="disabled"><a class="animate" href="#register">Register</a></li>
+					<li><a class="animate" href="logout.php">Logout</a></li>
+					<!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+			<ul id="login-dp" class="dropdown-menu">
+				<li>
+					 <div class="row">
+							<div class="col-md-12">
+								Login
+								
+								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputEmail2">Email address</label>
+											 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+										</div>
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputPassword2">Password</label>
+											 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                             <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+										</div>
+										<div class="form-group">
+											 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+										</div>
+										<div class="checkbox">
+											 <label>
+											 <input type="checkbox"> keep me logged-in
+											 </label>
+										</div>
+								 </form>
+							</div>
+							<div class="bottom text-center">
+								New here ? <a href="#"><b>Join Us</b></a>
+							</div>
+					 </div>
+				</li>
+			</ul>
+        </li>-->
+                    <li class="[ hidden-xs ]"><a href="#toggle-search" class="[ animate ]"><span class="[ glyphicon glyphicon-search ]"></span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="[ bootsnipp-search animate ]">
+			<div class="[ container ]">
+				<form action="www.studentlogin.epizy.com" method="GET" role="search">
+					<div class="[ input-group ]">
+						<input type="text" class="[ form-control ]" name="q" placeholder="Search for Awesomeness and hit enter">
+						<span class="[ input-group-btn ]">
+							<button class="[ btn btn-danger ]" type="reset"><span class="[ glyphicon glyphicon-remove ]"></span></button>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="row">
+      <div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0 nopadding">
+        <!-- 16:9 aspect ratio -->
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/99k3u9ay1gs?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <p></p>
+      <span class="highlight">  Justice League  </span>
+      <p></p>
+    </div>
+  </div>
+</div>
+<div class= "cover">
+	<footer class="container-fluid text-center bg-lightgray">
+
+        <div class="copyrights" style="margin-top:25px;">
+            <p>OneMovies© 2017, All Rights Reserved
+                <br>
+                <span>Web Designed By: <mark>Arko Singh</mark></span></p>
+            <p><a href="https://www.linkedin.com/in/arko-singh-216361b5/" target="_blank">Linkedin <i class="fa fa-linkedin-square" aria-hidden="true"></i> </a></p>
+        </div>
+</footer>
+<div>
+	</div>
+
+	<script src="js/jquery.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+   $(function() { 
+
+    $('a[href="#toggle-search"], .navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn[type="reset"]').on('click', function(event) {
+		event.preventDefault();
+		$('.navbar-bootsnipp .bootsnipp-search .input-group > input').val('');
+		$('.navbar-bootsnipp .bootsnipp-search').toggleClass('open');
+		$('a[href="#toggle-search"]').closest('li').toggleClass('active');
+
+		if ($('.navbar-bootsnipp .bootsnipp-search').hasClass('open')) {
+			/* I think .focus dosen't like css animations, set timeout to make sure input gets focus */
+			setTimeout(function() { 
+				$('.navbar-bootsnipp .bootsnipp-search .form-control').focus();
+			}, 100);
+		}			
+	});
+
+	$(document).on('keyup', function(event) {
+		if (event.which == 27 && $('.navbar-bootsnipp .bootsnipp-search').hasClass('open')) {
+			$('a[href="#toggle-search"]').trigger('click');
+		}
+	});
+    
+});
+    </script>
+   
+	</body>
+	</html>
